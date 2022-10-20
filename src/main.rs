@@ -2,7 +2,8 @@
 
 fn main() {
     println!("Hello, world!");
-    // DATA TYPES
+    //region DATA TYPES
+    println!("================DATA TYPES=================");
     // Arrays & Tuples
     let _array_initialization: [u64; 2] = [0, 1_000]; // 1000 elements of unsigned int of 64bit
     let coordinates: [f64; 2] = [41.40923848, -81.8628462];
@@ -40,4 +41,49 @@ fn main() {
     slogan.push(' ');
     slogan = slogan + "every time";
     println!("{}", slogan);
+
+    //endregion DATA TYPES
+
+    //region VARIABLES
+    println!("================VARIABLES=================");
+    //Variables
+    let my_variable_name: u32 = 0;
+    let my_inferred_variable = 0;
+    let my_inferred_variable2 = 1_i8;
+    let my_inferred_variable_f = 1.0;
+    let my_inferred_variable_f2: f32 = 1.0;
+    let _warning_variable = 0;
+
+    //Casting
+    let float_thirty_two: f32 = 17.2;
+    let unsigned_eight: u8 = 5;
+    let cast_unsigned_eight = unsigned_eight as f32;
+    let result = float_thirty_two / cast_unsigned_eight;
+    println!("{}", result);
+
+    let number: u8 = 65;
+    let letter: char = number as char; // translates the numerical value of the unicode character
+    println!("{}", letter);
+
+    //Mutability
+    // - by default variables are immutable; to change that add the keyword "mut"
+    let mut x = 32;
+    println!("x= {}", x);
+    x += 1;
+    println!("x= {}", x);
+
+    let y = 32;
+    println!("y= {}", y);
+    // y += 1; // -> Compiler error
+
+    //Scope and shadowing
+    let scope_test = "outer scope";
+    println!("{}", scope_test);
+    {
+        let scope_test = "inner scope"; // -> shadowing scope_test
+        println!("{}", scope_test); // if let scope_test = "inner scope"; will be deleted or commented this will print "outer scope"
+    }
+    println!("{}", scope_test);
+
+    //endregion VARIABLES
 }
