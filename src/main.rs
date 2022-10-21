@@ -1,5 +1,7 @@
 #![allow(unused_variables)]
 
+use std::f32;
+
 fn main() {
     println!("Hello, world!");
     //region DATA TYPES
@@ -86,4 +88,56 @@ fn main() {
     println!("{}", scope_test);
 
     //endregion VARIABLES
+
+    //region OPERATORS
+    println!("================OPERATORS=================");
+    //Math Operators
+    let modulus = 18 % 7;
+    println!("{}", modulus);
+
+    let squared = i32::pow(8, 2);
+    let float_to_integer_exponent = f32::powi(8.2, 2);
+    let float_to_float_exponent = f32::powf(8.5, 2.3);
+    println!("integer to integer exponent: {}", squared);
+    println!("float to integer exponent: {}", float_to_integer_exponent);
+    println!("float to float exponent: {}", float_to_float_exponent);
+
+    let order_ops = 8 + 4 * 2 - (12 / 3 + 7) + 4;
+    println!("{}", order_ops);
+
+    //Logic Operators
+    let are_equal_is_true = 1 == 1;
+    let are_equal_is_false = 1 == 2;
+    let are_not_equal = 1 != 2;
+
+    let is_true = true;
+    let is_false = !is_true;
+    println!("is_true: {}, is_false: {}", is_true, is_false);
+
+    let have_passport = true;
+    let have_driver_license = false;
+    let have_proof = have_passport || have_driver_license;
+
+    let have_boarding_pass = true;
+    let have_id = have_proof;
+    let can_board = have_boarding_pass && have_id;
+    println!("Can board plane: {}", can_board);
+
+    //Bitwise Operators
+    let bitwise_and = 22 & 59;
+    println!("bitwise and: {}", bitwise_and);
+
+    let bitwise_or = 22 | 59;
+    println!("bitwise or: {}", bitwise_or);
+
+    let bitwise_xor = 22 ^ 59;
+    println!("bitwise xor: {}", bitwise_xor);
+
+    let left_shift = 86 << 1; // tip: multiply by 2^1
+    println!("left shift: {}", left_shift);
+
+    let right_shift = 44 >> 2; // tip: divide by 2^2
+    println!("right shift: {}", right_shift);
+
+    //endregion OPERATORS
 }
