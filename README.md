@@ -22,3 +22,8 @@ Rust Fundamentals Examples
 ### Fundamentals 4
 * Loops
 
+### Fundamentals 5
+* Ownership
+* Borrowing
+* Lifetimes
+
