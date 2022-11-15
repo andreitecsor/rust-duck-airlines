@@ -27,3 +27,11 @@ Rust Fundamentals Examples
 * Borrowing
 * Lifetimes
 
+### Fundamentals 6
+* Functions
+  * Closures
+
+### Fundamentals 7
+* Error handling
+* Error propagation
+* Minimal working with files
