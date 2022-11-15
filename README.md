@@ -2,8 +2,12 @@
 Rust Fundamentals Examples
 
 ## Content
-### Main
-* Project calculating distance between two airports
+### Project 
+Theme: calculating distance between two airports
+#### Version 1
+* Using option and match
+#### Version 2
+* Using structures, associated methods
 
 ### Fundamentals 1
 * Data type
@@ -35,3 +39,8 @@ Rust Fundamentals Examples
 * Error handling
 * Error propagation
 * Minimal working with files
+
+### Fundamentals 8
+* Structures
+* Associated methods
+* Traits
