@@ -1,13 +1,14 @@
 # rust-duck-airlines
 Rust Fundamentals Examples
 
-## Content
-### Project 
+## Project 
 Theme: calculating distance between two airports
-#### Version 1
+### Version 1
 * Using option and match
-#### Version 2
+### Version 2
 * Using structures, associated methods
+
+## Content
 
 ### Fundamentals 1
 * Data type
