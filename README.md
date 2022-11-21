@@ -45,3 +45,13 @@ Theme: calculating distance between two airports
 * Structures
 * Associated methods
 * Traits
+
+### Fundamentals 9
+* Sequences
+  * Vectors
+  * Vector Double Ended Queue
+* Maps
+* Sets
+
+### Fundamentals 10
+* Generics and constraints
